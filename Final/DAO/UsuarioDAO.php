@@ -8,7 +8,7 @@ class UsuarioDAO {
             $sql = "SELECT * FROM usuarios WHERE usuario ='$user' and clave = '$pass'";
             $conexionDB->ejecutar($sql);
 
-            return $ConexionDB->cantFilas() == 1;
+            return $conexionDB->cantFilas() == 1;
             }
         public function listarUsuarios(){
             require_once("../dataBase/ConexionDB.php");
